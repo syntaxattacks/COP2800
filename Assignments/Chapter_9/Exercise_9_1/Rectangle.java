@@ -2,8 +2,8 @@ package Exercise_9_1;
 
 public class Rectangle {
 	// The default length and width
-	double width = 1;
-	double height = 1;
+	private double width = 1;
+	private double height = 1;
 	
 	// Construct a no-arg rectangle object
 	Rectangle() {
@@ -22,7 +22,15 @@ public class Rectangle {
 	}
 	
 	double getPerimeter() {
-		return width + width + height + height;
+		return 2 * (width + height);
+	}
+	
+	public double getHeight(){
+		return height;
+	}
+	
+	public double getWidth(){
+		return width;
 	}
 	
 }

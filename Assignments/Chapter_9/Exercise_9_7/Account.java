@@ -29,9 +29,9 @@ import java.util.Date;
 class Account {
 
 	/* Declare and initialize data fields */
-	int id = 0;
-	double balance = 0;
-	double annualInterestRate = 0;
+	private int id = 0;
+	private double balance = 0;
+	private double annualInterestRate = 0;
 	private Date dateCreated;
 	
 	/* No-arg constructor */

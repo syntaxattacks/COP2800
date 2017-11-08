@@ -2,10 +2,10 @@ package Exercise_9_2;
 
 public class Stock {
 	// Declare and initialize data fields
-	String symbol = "";
-	String name = "";
-	double previousClosingPrice = 0;
-	double currentPrice = 0;
+	private String symbol = "";
+	private String name = "";
+	private double previousClosingPrice = 0;
+	private double currentPrice = 0;
 	
 	Stock(String newSymbol,String newName, double newClosePrice, double newCurrentPrice) {
 		symbol = newSymbol;
@@ -17,4 +17,17 @@ public class Stock {
 	double getChangePercent() {
 		return (currentPrice - previousClosingPrice) / previousClosingPrice;
 	} // End getChangePercent
+	
+	String getSymbol() {
+		return symbol;
+	}
+	String getName() {
+		return name;
+	}
+	double getPreviousClosingPrice() {
+		return previousClosingPrice;
+	}
+	double getCurrentPrice() {
+		return currentPrice;
+	}
 }
