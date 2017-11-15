@@ -17,7 +17,7 @@ public class BMI {
   public BMI(String name, int age, double weight, double feet, double inches) {
 	    this.name = name;
 	    this.age = age;
-	    this.height = (feet * 12) + inches;
+	    this.height = feet * 12 + inches;
   }
   
   public BMI(String name, double weight, double height) {
