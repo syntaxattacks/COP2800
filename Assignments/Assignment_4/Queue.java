@@ -1,6 +1,8 @@
 /* 
  * Ian Hann
+ * COP2800
  * Assignment 4
+ * 11/14/2017
  * 
  */
 
@@ -9,9 +11,10 @@
 *-------------------------------------------------------*
 * -elements: int[]                                      *
 * -size: int                                            *
+* +DEFAULT_SIZE: int                                    *
 * ------------------------------------------------------*
 * +Queue()                                              *
-* +enqueue(v: int                                       *
+* +enqueue(v): int                                       *
 * +dequeue(): int                                       *
 * +empty(): boolean                                     *
 * +getSize: int                                         *
@@ -22,12 +25,12 @@ public class Queue {
 	/* Data Fields */
 	private int[] elements;
 	private int size = 0;
-	public static final int DEFAULT_CAPACITY = 8;
+	public static final int DEFAULT_SIZE = 8;
 	
 	
 	/* Constructors */
 	public Queue() { // No-arg constructor
-		elements = new int[DEFAULT_CAPACITY];
+		elements = new int[DEFAULT_SIZE];
 	}
 	
 	public void enqueue(int v) {
